@@ -1,0 +1,38 @@
+<div align="center">
+  <h3>Send A message to Us</h3>
+
+  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+    <%= f.input :name, :required => true %>
+    <%= f.input :email, :required => true %>
+    <%= f.input :message, :as => :text, :required => true %>
+    <div class= "hidden">
+      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+    </div>
+    <div>
+      </br>
+      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+    </div>
+        <div class="row-fluid">
+        <div class="span4"><br/><br/>
+              <h2>Zenith Workfocse Pty LTD</h2>
+              <address>
+                &nbsp;<i class="fa fa-map-marker"></i>&nbsp;Adress:<br>
+                l9/1 Rider Blvd,<br>
+                Rhodes NSW 2138, <br>
+                Australia<br>
+                <br>
+                &nbsp;<i class="fa fa-clock-o"></i>&nbsp;Openning hours:<br>
+                ..............<br>
+               ...............<br>
+             
+              </address>
+            </div>
+              <div class="span8">
+                <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?q=Zenith%20Workforce%20Pty%20LTD%2C%20Rider%20Boulevard%2C%20Rhodes%2C%20New%20South%20Wales%2C%20Australia&key=AIzaSyDYihilYnftc8rBO4Hs1rObRCGkh0EwYSQ"></iframe>
+
+            </div>
+
+          
+          </div>
+  <% end %>
+</div>
